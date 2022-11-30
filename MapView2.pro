@@ -34,12 +34,14 @@ android {
         android/res/layout/second_activity.xml \
         android/res/values/libs.xml \
         android/src/org/qtproject/example/mapview/MapViewController.java \
-    android/src/org/qtproject/example/mapview/MapViewWrapper.java
+        android/src/org/qtproject/example/mapview/MapViewWrapper.java \
+        android/src/org/qtproject/example/mapview/MapActivity.java
 
     ANDROID_PACKAGE_SOURCE_DIR = \
         $$PWD/android
 }
 
 DISTFILES += \
+    android/res/layout/activity_maps.xml \
     android/res/values/colors.xml \
-    android/src/org/qtproject/example/mapview/MapActivity.java
+    android/src/org/qtproject/example/mapview/MapsMainActivity.java

@@ -20,12 +20,12 @@ public:
     MapView(QQuickItem*parent=nullptr);
     ~MapView();
 
-    void setGeometry(const QRect &geometry);
-    void setVisibility(QWindow::Visibility visibility);
-    void setVisible(bool visible);
+//    void setGeometry(const QRect &geometry);
+//    void setVisibility(QWindow::Visibility visibility);
+//    void setVisible(bool visible);
 
 private slots:
-    void appStateChanged(Qt::ApplicationState State);
+    //void appStateChanged(Qt::ApplicationState State);
 
 //    void _activeFocusChanged(bool activeFocus);
 //    void _activeFocusOnTabChanged(bool activeFocusOnTab);
@@ -55,14 +55,14 @@ private slots:
 private :
 #ifdef Q_OS_ANDROID
 
-    enum APP_STATE
-    {
-        APP_STATE_CREATE = 0,
-        APP_STATE_START,
-        APP_STATE_STOP,
-        APP_STATE_DESTROY
-    };
-    void SetNewAppState(APP_STATE NewState);
+//    enum APP_STATE
+//    {
+//        APP_STATE_CREATE = 0,
+//        APP_STATE_START,
+//        APP_STATE_STOP,
+//        APP_STATE_DESTROY
+//    };
+//    void SetNewAppState(APP_STATE NewState);
 
     quintptr m_id;
     quint64 m_callbackId;
